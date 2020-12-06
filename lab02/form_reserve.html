@@ -11,15 +11,15 @@
     <table>
         <tr>
             <td><label name="roomtype">Room Type:</label></td>
-            <td><select name="selecttype">
+            <td><select name="roomtype">
                 <option value="0">Please Select</option>
-                <option value="1">Standard</option>
-                <option value="2">Luxury</option>
-                <option value="3">Deluxe</option></select></td>
+                <option value="Standard">Standard</option>
+                <option value="Luxury">Luxury</option>
+                <option value="Deluxe">Deluxe</option></select></td>
         </tr>
         <tr>
             <td><label name="numguest">Number of Guests:</label></td>
-            <td><select name="selectguest">
+            <td><select name="numguest">
                 <option value="0">Please Select</option>
                 <option value="1-2">1-2</option>
                 <option value="3-4">3-4</option>
@@ -29,22 +29,43 @@
         </tr>
         <tr>
             <td><label for="name">Name</label></td>
-            <td><input type="text" name="fame" id="fame"></td>
+            <td><input type="text" name="fname" id="fname"></td>
             <td><input type="text" name="lname" id="lname"></td>
         </tr>
         <tr>
             <td><label for="email">Email</label></td>
-            <td><input type="text" name="email"></td>
+            <td><input type="text" name="email" id="email"></td>
         </tr>
         <tr>
             <td><label for="arrival">Arrival</label></td>
-            <td><input type="text" name="arrivaldate"></td>
-            <td><input type="text" name="arrivaltime"></td>
+            <td><input type="text" name="arrivaldate" id="arrivaldate"></td>
+            <td><input type="text" name="arrivaltime" id="arrivaltime"></td>
         </tr>
         <tr>
             <td><label for="departure">Departure</label></td>
-            <td><input type="text" name="departuredate"></td>
-            <td><input type="text" name="departuretime"></td>
+            <td><input type="text" name="departuredate" id="departuredate"></td>
+            <td><input type="text" name="departuretime" id="departuretime"></td>
+        </tr>
+        <tr>
+            <td><label for="pickup">Free Pickup</label></td>
+            <td><input type="radio" name="pickup" id="pickup" value="Yes">Yes, Sure!</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="radio" name="pickup" id="pickup" value="No">No, I already rented a car.</td>
+        </tr>
+        <tr>
+            <td><label for="flightnum">Flight Number</label></td>
+            <td><input type="text" name="flightnum" id="flightnum"></td>
+        </tr>
+        <tr>
+            <td><label for="otherreq">Other requests</label></td>
+            <td><textarea name="otherreq" id="otherreq" cols="50" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Send">
+                <input type="reset" value="Clear"></td>
         </tr>
     </table>
     </form>
