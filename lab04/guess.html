@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    rn = Math.floor(Math.random()*10);
+    
+    function checkNum(){
+        div = document.getElementById('disp');
+    }
+</script>
+<body>
+    <input type="text" onkeyup="checkNum(this.value);">
+
+    <div id="disp">Default text</div>
+    <button onclick="getElementById('disp').innerHTML='';">Clear div</button>
+</body>
+</html>
