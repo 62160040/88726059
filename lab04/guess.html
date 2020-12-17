@@ -8,14 +8,17 @@
 <script>
     rn = Math.floor(Math.random()*10);
     
-    function checkNum(){
+    function checkNum(n){
         div = document.getElementById('disp');
+        if(n>rn){
+            
+        }
     }
 </script>
 <body>
     <input type="text" onkeyup="checkNum(this.value);">
 
-    <div id="disp">Default text</div>
-    <button onclick="getElementById('disp').innerHTML='';">Clear div</button>
+    <div id="disp"></div>
+    <button onclick="getElementById('disp').innerHTML='';">Clear</button>
 </body>
 </html>
