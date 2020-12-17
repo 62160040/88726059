@@ -10,8 +10,8 @@
     
     function checkNum(n){
         div = document.getElementById('disp');
-        if(n>rn){
-            
+        if(n > rn){
+            result = "มากไป";
         }
     }
 </script>
@@ -19,6 +19,6 @@
     <input type="text" onkeyup="checkNum(this.value);">
 
     <div id="disp"></div>
-    <button onclick="getElementById('disp').innerHTML='';">Clear</button>
+    <button onclick="result">guess</button>
 </body>
 </html>
