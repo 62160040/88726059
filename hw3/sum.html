@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function Sum(num1,num2) {
+
+        div = document.getElementById('disp');
+        div.innerHTML = "";
+        sum = 0;
+        for (i = (num1*1); i <= (num2*1); i++) {
+            if(i < num2){
+                div.innerHTML += i + " + ";
+            }else{
+                div.innerHTML += i + " = ";
+            }
+            sum = sum + i;
+            if( i == num2){
+                div.innerHTML += sum;
+            }
+        }
+    }
+</script>
+<input type="text" id="num1">
+<b>-</b>
+<input type="text" id="num2">
+<button onclick="Sum(num1.value,num2.value)">Summary</button>
+<div id="disp"></div>
+<body>
+</body>
+</html>
