@@ -6,29 +6,29 @@
     <title>Document</title>
 </head>
 <script>
-    sum=0;
-    sum1;
-    function funSum(num1,num2){
-        num1 = document.getElementById('num1').value
-        num2 = document.getElementById('num2').value
+    function Sum(num1,num2) {
 
-        for (i = num1; i <= num2; i++) {
-            if(i!=num2){
-                document.getElementById('disp').innerHTML += i + " + ";
-                sum1 = sum +i;
+        div = document.getElementById('disp');
+        div.innerHTML = "";
+        sum = 0;
+        for (i = (num1*1); i <= (num2*1); i++) {
+            if(i < num2){
+                div.innerHTML += i + " + ";
             }else{
-            document.getElementById('disp').innerHTML += i + " = ";
-            sum1 = sum +i;
+                div.innerHTML += i + " = ";
+            }
+            sum = sum + i;
+            if( i == num2){
+                div.innerHTML += sum;
+            }
         }
     }
-        document.getElementById('disp').innerHTML += sum1;
-    }
 </script>
+<input type="text" id="num1">
+<b>-</b>
+<input type="text" id="num2">
+<button onclick="Sum(num1.value,num2.value)">Summary</button>
+<div id="disp"></div>
 <body>
-    <label><b>4. โปรแกรมบวกสะสม - sum.html</b></label><br>
-    <input type="number" id="num1"> -
-    <input type="number" id="num2">
-    <button onclick="funSum(document.getElementById('num1'),document.getElementById('num2'));">Summary</button>
-    <div id="disp"></div>
 </body>
 </html>

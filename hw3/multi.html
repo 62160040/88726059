@@ -8,17 +8,21 @@
 <script>
     function multi(n){
         n = document.getElementById('number').value
-        div = document.getElementById('disp')
-        div.innerHTML = "";
+        a = document.getElementById('disp')
+        a.innerHTML = "";
         for (i = 1; i <= 12; i++) {
-            document.getElementById('disp').innerHTML += n + " x " + i + " = " + (n * i) + "<br>";
+            document.getElementById('disp').innerHTML += 
+            `<tr>
+            <td>${n}</td><td>${" x "}</td><td>${i}</td><td>${" = "}</td><td>${(n * i)}</td>
+            </tr><br>`
         }
     }
 </script>
 <body>
     <label><b>2. โปรแกรม สูตรคูณ - multi.html</b></label><br>
-    <input type="text" id="number" onkeyup="multi(this.value);">
-    <div id="disp"></div>
-
+    <input type="text" id="number" onkeyup="multi(this.value);"><br>
+    <table style="width:100%">
+        <a id="disp"></a>
+    </table>
 </body>
 </html>
