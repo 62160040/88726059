@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,4 +26,33 @@
         <a id="disp"></a>
     </table>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function multi(n){
+        n = document.getElementById('number').value
+        a = document.getElementById('disp')
+        a.innerHTML = "";
+        for (i = 1; i <= 12; i++) {
+            document.getElementById('disp').innerHTML += 
+            `<tr>
+            <td>${n}</td><td>${" x "}</td><td>${i}</td><td>${" = "}</td><td>${(n * i)}</td>
+            </tr><br>`
+        }
+    }
+</script>
+<body>
+    <label><b>2. โปรแกรม สูตรคูณ - multi.html</b></label><br>
+    <input type="text" id="number" onkeyup="multi(this.value);"><br>
+    <table style="width:100%">
+        <a id="disp"></a>
+    </table>
+</body>
+>>>>>>> 100605c4c4b48c9dce22fcd46d34c1a4fb90c8da
 </html>
